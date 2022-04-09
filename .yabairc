@@ -1,27 +1,30 @@
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
+### Gaps
 gaps_top="15"
 gaps_bottom="15"
 gaps_left="15"
 gaps_right="15"
 gaps_inner="15"
 
-normal_border_color="FF79C6"
-focused_border_color="FF79C6"
+### Border Colors
+normal_border_color="DDB6F2"
+focused_border_color="ABE9B3"
 preselect_border_color="FF79C6"
 
+### Settings
 yabai -m config layout                      bsp
 yabai -m config top_padding                 "${gaps_top}"
 yabai -m config bottom_padding              "${gaps_bottom}"
 yabai -m config left_padding                "${gaps_left}"
 yabai -m config right_padding               "${gaps_right}"
 yabai -m config window_gap                  "${gaps_inner}"
-# yabai -m config window_border               on
-# yabai -m config window_border_width         4
-# yabai -m config active_window_border_color  "0xE0${focused_border_color}"
-# yabai -m config insert_window_border_color  "0xE0${preselect_border_color}"
-# yabai -m config normal_window_border_color  "0x00${normal_border_color}"
+yabai -m config window_border               on
+yabai -m config window_border_width         4
+yabai -m config active_window_border_color  "0xff${focused_border_color}"
+yabai -m config insert_window_border_color  "0xff${preselect_border_color}"
+# yabai -m config normal_window_border_color  "0xff${normal_border_color}"
 yabai -m config focus_follows_mouse off
 yabai -m config mouse_follows_focus off
 yabai -m config window_shadow float
@@ -40,23 +43,25 @@ yabai -m rule --add label="VirtualBox" app="^VirtualBox$" manage=off
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
-source ~/.cache/wal/colors.sh # pywal scheme - update if needed
+
+### Pywal
+# source ~/.cache/wal/colors.sh # pywal scheme - update if needed
 
 # yabai template colours
-CBACK=$(echo $background | sed 's/#//')
-CFORE=$(echo $foreground | sed 's/#//')
-CACTV=$(echo $color3 | sed 's/#//')
-CNORM=$(echo $color1 | sed 's/#//')
-CINSE=$(echo $foreground | sed 's/#//')
+# CBACK=$(echo $background | sed 's/#//')
+# CFORE=$(echo $foreground | sed 's/#//')
+# CACTV=$(echo $color3 | sed 's/#//')
+# CNORM=$(echo $color1 | sed 's/#//')
+# CINSE=$(echo $foreground | sed 's/#//')
 
-yabai -m config status_bar                   on
-yabai -m config status_bar_background_color  0xff$CBACK
-yabai -m config status_bar_foreground_color  0xff$CFORE
+# yabai -m config status_bar                   on
+# yabai -m config status_bar_background_color  0xff$CBACK
+# yabai -m config status_bar_foreground_color  0xff$CFORE
 
-yabai -m config window_border                on
-yabai -m config window_border_width          4
+# yabai -m config window_border                on
+# yabai -m config window_border_width          4
 # yabai -m config active_window_border_color   0xff$CACTV
-yabai -m config active_window_border_color   0xff$CNORM
+# yabai -m config active_window_border_color   0xff$CNORM
 # yabai -m config normal_window_border_color   0xff$CNORM
-yabai -m config normal_window_border_color   0xff$CFORE
-yabai -m config insert_window_border_color   0xff$CINSE
+# yabai -m config normal_window_border_color   0xff$CFORE
+# yabai -m config insert_window_border_color   0xff$CINSE

@@ -49,6 +49,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'tpope/vim-commentary'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
+Plug 'neomutt/neomutt.vim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 " use normal easymotion when in vim mode
 Plug 'easymotion/vim-easymotion', Cond(!exists('g:vscode'))
@@ -102,8 +104,8 @@ set background=dark
 " let g:gruvbox_italic = '1'
 " colorscheme gruvbox
 "   Dracula colorscheme
-colorscheme dracula
-let g:airline_theme = 'dracula'
+" colorscheme dracula
+" let g:airline_theme = 'dracula'
 "   Monokai colorscheme
 " colorscheme monokai
 " let g:airline_theme = 'monokai_subtle'
@@ -117,6 +119,8 @@ let g:airline_theme = 'dracula'
 " set termguicolors
 " Pink Moon
 "colorscheme pink-moon
+" Catpuccin
+colorscheme catppuccin
 
 " Format Options
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -160,7 +164,7 @@ let g:bullets_delete_last_bullet_if_empty = 0
 " let g:airline_powerline_fonts = 1
 " Vim Lightline
 let g:lightline = {
-	\ 'colorscheme': 'darcula',
+		\ 'colorscheme': 'catppuccin',
 	\ }
 
 " Vim Pencil
