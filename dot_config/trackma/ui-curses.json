@@ -1,0 +1,101 @@
+{
+    "keymap": {
+        "addsearch": "a",
+        "altname": "A",
+        "delete": "d",
+        "details": "enter",
+        "details_exit": "esc",
+        "down": "j",
+        "help": "?",
+        "left": "h",
+        "neweps": "N",
+        "next_filter": "right",
+        "open_web": "O",
+        "openfolder": "o",
+        "page_down": "J",
+        "page_up": "K",
+        "play": "p",
+        "play_random": "&",
+        "prev_filter": "left",
+        "quit": "q",
+        "reload": "c",
+        "retrieve": "R",
+        "right": "l",
+        "score": "z",
+        "search": "/",
+        "send": "s",
+        "sort": "f3",
+        "sort_order": "r",
+        "status": "f6",
+        "switch_account": "f9",
+        "up": "k",
+        "update": "u"
+    },
+    "palette": {
+        "body": [
+            "dark blue",
+            ""
+        ],
+        "button": [
+            "black",
+            "light gray"
+        ],
+        "button hilight": [
+            "white",
+            "dark green"
+        ],
+        "error": [
+            "light red",
+            "dark blue"
+        ],
+        "focus": [
+            "light green,bold",
+            ""
+        ],
+        "head": [
+            "dark green",
+            "black"
+        ],
+        "header": [
+            "bold",
+            ""
+        ],
+        "info_section": [
+            "dark magenta",
+            ""
+        ],
+        "info_title": [
+            "light red",
+            ""
+        ],
+        "item_airing": [
+            "light magenta",
+            ""
+        ],
+        "item_neweps": [
+            "light cyan",
+            ""
+        ],
+        "item_notaired": [
+            "dark green",
+            ""
+        ],
+        "item_playing": [
+            "white",
+            "light blue"
+        ],
+        "item_updated": [
+            "white",
+            "dark blue"
+        ],
+        "status": [
+            "black",
+            "dark green"
+        ],
+        "window": [
+            "black",
+            "light green"
+        ]
+    },
+    "show_help": true
+}

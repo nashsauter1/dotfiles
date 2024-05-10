@@ -1,0 +1,12 @@
+snippet note "VimWiki Notes Entry" b
+[`date +%m%d%Y`${1}](${2:subject}`date +%m%d%Y`$1) - ${0:Title}
+endsnippet
+
+snippet list "Numbered list" b
+* ${1:List Title}
+	1. ${0:Entry}
+endsnippet
+
+snippet cite "Hugo Cite"
+{{< cite "$1" $2>}}
+endsnippet

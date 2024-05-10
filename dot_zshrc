@@ -1,0 +1,103 @@
+# neofetch
+export PF_COLOR=0
+pfetch
+
+# tmux default
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi
+
+
+# Source
+# source $(brew --prefix)/share/zsh/site-functions/_todoist_fzf
+source $(brew --prefix)/share/zsh/site-functions/_todoist_peco
+
+source ~/.config/zsh/antigen.zsh
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$PATH
+export XDG_CONFIG_HOME="$HOME/.config"
+
+
+# EXPORTS
+export PORT=8080
+export PATH="$PATH:/Users/nashsauter/.local/bin"
+export EDITOR=nvim
+export PAGER=less
+export LESS="-R"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export ZSH_AUTOSUGGEST_STRATEGY=completion
+
+# Aliases
+alias v="nvim"
+alias vimrc="nvim ~/.config/nvim/"
+alias arc="nvim ~/.config/alacritty/alacritty.yml"
+alias zshrc="nvim ~/.zshrc"
+alias r="ranger"
+alias lg="lazygit"
+alias q="exit"
+alias rmount="rclone mount BigBox2: ~/RClone --daemon --vfs-cache-mode minimal --buffer-size 1024M --dir-cache-time 1000h --vfs-cache-max-age 168h --vfs-read-chunk-size 128M --vfs-read-chunk-size-limit=2G"
+alias rips="rip search -s deezer"
+alias ls="lsd"
+alias e='emacsclient -c -a "emacs"'
+alias beetype='./Documents/cli/beeminder/beetype.sh'
+alias lightsail='ssh -i ~/Documents/cli/beeminder/aws/LightsailDefaultKey-us-west-2.pem ubuntu@34.220.224.9'
+alias p3='python3'
+alias sp="spotifyd & spt"
+alias awse2='ssh ubuntu@52.13.119.70 -i ~/Documents/cli/nashe2.pem'
+alias tc='trackma-curses'
+alias bathelp='bat --plain --language=help'
+help() {
+    "$@" --help 2>&1 | bathelp
+}
+
+# pdf alias
+pdf() {
+    zathura $1 & disown
+}
+
+# Bundles
+# antigen  oh-my-zsh
+
+# source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+antigen bundle Aloxaf/fzf-tab
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle qoomon/zsh-lazyload
+antigen bundle jeffreytse/zsh-vi-mode
+# antigen bundle marlonrichert/zsh-autocomplete
+# antigen bundle fzf
+# antigen bundle unixorn/fzf-zsh-plugin
+antigen bundle skywind3000/z.lua
+antigen bundle kazhala/dotbare
+
+## Options
+setopt extendedglob
+setopt nocaseglob
+setopt correct
+setopt rcexpandparam
+
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# Zen prompt
+fpath+="$HOME/.zsh/zen"
+autoload -Uz promptinit
+promptinit
+prompt zen
+
+# Syntax Highlight (Must be last)
+antigen bundle zsh-users/zsh-syntax-highlighting
+export FZF_DEFAULT_OPTS='--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
+
+# Antigen Apply
+antigen apply
+
+# Starship (End)
+# eval "$(starship init zsh)"
+
+export PATH=$PATH:/Users/nashsauter/.spicetify
+export PATH="/usr/local/opt/bison/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

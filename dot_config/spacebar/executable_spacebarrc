@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+
+spacebar -m config position           top
+spacebar -m config height             20
+spacebar -m config spacing_left       25
+spacebar -m config spacing_right      15
+# spacebar -m config text_font          "FantasqueSansMono Nerd Font:Bold:12.0"
+# spacebar -m config text_font          "SpaceMono Nerd Font:Bold:11.0"
+spacebar -m config text_font          "GohuFont uni11 Nerd Font:Regular:13.0"
+spacebar -m config icon_font          "GohuFont uni11 Nerd Font:Regular:13.0"
+# spacebar -m config icon_font          "Font Awesome 5 Free:Regular:12.0"
+# spacebar -m config icon_font          "FantasqueSansMono Nerd Font:Bold:12.0"
+# spacebar -m config icon_font          "FantasqueSansMono Nerd Font:Bold:11.0"
+spacebar -m config background_color   0xff3b4252
+spacebar -m config foreground_color   0xff8fbcbb
+spacebar -m config space_icon_color   0xffb48ead
+spacebar -m config power_icon_color   0xffA3BE8C
+spacebar -m config battery_icon_color 0xffEBCB8B
+spacebar -m config dnd_icon_color     0xffC9CBFF
+spacebar -m config clock_icon_color   0xff89DCEB
+spacebar -m config space_icon_strip   [one] [two] [three] [four] [five] [six]
+# spacebar -m config space_icon_strip   one two three four five six
+# spacebar -m config display_separator on
+# spacebar -m config display_separator_icon |
+spacebar -m config dnd off
+spacebar -m config power_icon_strip   󰁾 󰂄
+spacebar -m config space_icon         
+spacebar -m config clock_icon         
+spacebar -m config dnd_icon           
+spacebar -m config clock_format       "%a %m/%d  %I:%M %p"
+
+# Music
+spacebar -m config title on
+# spacebar -m config right_shell                 on
+# spacebar -m config right_shell_icon            
+# spacebar -m config right_shell_command         "whoami"
+spacebar -m config center_shell off
+# spacebar -m config center_shell_command "bash ~/.config/cmus/spacebar.sh"
+
+echo "spacebar configuration loaded.."
