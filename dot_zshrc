@@ -37,6 +37,7 @@ alias r="ranger"
 alias lg="lazygit"
 alias q="exit"
 alias rmount="rclone mount BigBox2: ~/RClone --daemon --vfs-cache-mode minimal --buffer-size 1024M --dir-cache-time 1000h --vfs-cache-max-age 168h --vfs-read-chunk-size 128M --vfs-read-chunk-size-limit=2G"
+alias zmount="rclone mount zurg: ~/Debrid --dir-cache-time 30s --vfs-cache-mode minimal --dir-cache-time 3h --daemon"
 alias rips="rip search -s deezer"
 alias ls="lsd"
 alias e='emacsclient -c -a "emacs"'
