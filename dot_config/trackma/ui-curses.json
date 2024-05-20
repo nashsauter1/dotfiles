@@ -90,11 +90,11 @@
         ],
         "status": [
             "black",
-            "dark green"
+            "dark cyan"
         ],
         "window": [
             "black",
-            "light green"
+            "light cyan"
         ]
     },
     "show_help": true
