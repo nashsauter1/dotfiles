@@ -18,8 +18,5 @@ require("lazy").setup({
 	require("plugins.r"),
 	require("plugins.cmp"),
 	require("plugins.neotree"),
-
-	require("colorscheme.mellow"),
-	require("colorscheme.onenord"),
 	require("colorscheme.schemes"),
 })

@@ -19,4 +19,12 @@ return {
 		"catppuccin/nvim",
 		lazy = false,
 	},
+	{
+		"mellow-theme/mellow.nvim",
+		lazy = false,
+	},
+	{
+		"rmehri01/onenord.nvim",
+		lazy = false,
+	},
 }
