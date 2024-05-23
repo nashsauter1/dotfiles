@@ -8,13 +8,17 @@ return {
 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
 	keys = {
-		{ "<Leader>wt", "<cmd>Neotree toggle<cr>", desc = "Neotree" },
+		{ "<Leader>wt", "<cmd>Neotree toggle<cr>", desc = "Neotree Split View" },
+		{ "<Leader>wf", "<cmd>Neotree position=current<cr>", desc = "Neotree Full View" },
 	},
 	config = function()
 		require("neo-tree").setup({
 			close_if_last_window = true,
 			window = {
 				width = 25,
+			},
+			filesystem = {
+				hijack_netrw_behavior = "open_current",
 			},
 		})
 	end,

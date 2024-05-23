@@ -21,4 +21,5 @@ require("lazy").setup({
 
 	require("colorscheme.mellow"),
 	require("colorscheme.onenord"),
+	require("colorscheme.schemes"),
 })
