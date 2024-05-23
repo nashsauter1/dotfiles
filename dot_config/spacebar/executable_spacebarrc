@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 
 spacebar -m config position           top
-spacebar -m config height             20
+spacebar -m config height             10
 spacebar -m config spacing_left       25
 spacebar -m config spacing_right      15
 # spacebar -m config text_font          "FantasqueSansMono Nerd Font:Bold:12.0"
 # spacebar -m config text_font          "SpaceMono Nerd Font:Bold:11.0"
-spacebar -m config text_font          "GohuFont uni11 Nerd Font:Regular:13.0"
-spacebar -m config icon_font          "GohuFont uni11 Nerd Font:Regular:13.0"
+spacebar -m config text_font          "GohuFont uni11 Nerd Font:Regular:11.0"
+spacebar -m config icon_font          "GohuFont uni11 Nerd Font:Regular:11.0"
 # spacebar -m config icon_font          "Font Awesome 5 Free:Regular:12.0"
 # spacebar -m config icon_font          "FantasqueSansMono Nerd Font:Bold:12.0"
 # spacebar -m config icon_font          "FantasqueSansMono Nerd Font:Bold:11.0"

@@ -1,14 +1,14 @@
-return{
-  {
-    "folke/which-key.nvim",
-    config = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-      require("which-key").setup({
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      })
-    end,
-  },
+return {
+	"folke/which-key.nvim",
+	event = "VimEnter",
+	config = function()
+		require("which-key").setup()
+		require("which-key").register({
+			["<leader>t"] = { name = "[T]elescope", _ = "which_key_ignore" },
+			["<leader>g"] = { name = "[G]it", _ = "which_key_ignore" },
+			["<leader>z"] = { name = "[Z]en", _ = "which_key_ignore" },
+			["<leader>s"] = { name = "[S]elect", _ = "which_key_ignore" },
+			["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
+		})
+	end,
 }
