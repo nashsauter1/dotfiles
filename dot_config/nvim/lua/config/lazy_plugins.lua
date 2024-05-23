@@ -17,6 +17,7 @@ require("lazy").setup({
 	require("plugins.ibl"),
 	require("plugins.r"),
 	require("plugins.cmp"),
+	require("plugins.neotree"),
 
 	require("colorscheme.mellow"),
 	require("colorscheme.onenord"),
