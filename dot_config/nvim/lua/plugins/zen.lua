@@ -1,17 +1,24 @@
 return {
-	"folke/zen-mode.nvim",
-	config = function()
-		vim.keymap.set("n", "<leader>zz", "<cmd>ZenMode<CR>", { noremap = true })
-		require("zen-mode").setup({
-			window = {
-				backdrop = 0.90,
-				width = 0.80,
-				height = 0.90,
-				options = {
-					signcolumn = "no",
-					number = false,
+	{
+		"folke/zen-mode.nvim",
+		lazy = false,
+		config = function()
+			vim.keymap.set("n", "<leader>zz", "<cmd>ZenMode<CR>", { noremap = true })
+			require("zen-mode").setup({
+				window = {
+					backdrop = 1,
+					width = 0.60,
+					height = 1,
+					options = {
+						signcolumn = "no",
+						number = false,
+					},
 				},
-			},
-		})
-	end,
+			})
+		end,
+	},
+	-- {
+	-- 	"folke/twilight.nvim",
+	-- 	opts = {},
+	-- },
 }

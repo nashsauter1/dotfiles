@@ -3,3 +3,4 @@ vim.g.maplocalleader = " "
 require("config.lazy")
 require("config.lazy_plugins")
 require("config.options")
+vim.cmd([[colorscheme kanagawa-dragon]])

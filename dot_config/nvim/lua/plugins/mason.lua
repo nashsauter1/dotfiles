@@ -29,6 +29,13 @@ return {
 				filetypes = { "markdown", "quarto" },
 			})
 			require("lspconfig").r_language_server.setup({})
+			require("lspconfig").bashls.setup({})
+			require("lspconfig").cssls.setup({})
+			require("lspconfig").html.setup({})
+			require("lspconfig").biome.setup({})
+			-- require("lspconfig").vale_ls.setup({
+			-- 	filetypes = { "markdown", "quarto" },
+			-- })
 		end,
 	},
 }

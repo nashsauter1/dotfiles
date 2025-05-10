@@ -1,7 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-- /Users/nashsauter/.local/share/chezmoi
+- /Users/nashsauter/Academia/Rousseau_Second
 - /Users/nashsauter/Documents/cli/BerlockBot
+- /Users/nashsauter/.local/share/chezmoi
 - /Users/nashsauter/Documents/vim/neovim
 - /Users/nashsauter/rblog
 - /Users/nashsauter/Documents/poetryprompts

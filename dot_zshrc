@@ -18,7 +18,6 @@ export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$PATH
 export XDG_CONFIG_HOME="$HOME/.config"
 
-
 # EXPORTS
 export PORT=8080
 export PATH="$PATH:/Users/nashsauter/.local/bin"
@@ -27,6 +26,8 @@ export PAGER=less
 export LESS="-R"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export ZSH_AUTOSUGGEST_STRATEGY=completion
+export PATH="$PATH:/Library/TeX/Root/bin/universal-darwin/"
+
 
 # Aliases
 alias v="nvim"
@@ -47,10 +48,12 @@ alias p3='python3'
 alias sp="spotifyd & spt"
 alias awse2='ssh ubuntu@52.13.119.70 -i ~/Documents/cli/nashe2.pem'
 alias tc='trackma-curses'
+alias shows='r ~/Debrid/__all__'
 alias bathelp='bat --plain --language=help'
 help() {
     "$@" --help 2>&1 | bathelp
 }
+alias balatro="/Users/nashsauter/Library/Application\ Support/Steam/steamapps/common/Balatro/Balatro.app/Contents/MacOS/run_lovely.sh"
 
 # pdf alias
 pdf() {

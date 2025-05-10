@@ -1,4 +1,6 @@
 require("lazy").setup({
+	require("colorscheme.schemes"),
+
 	"folke/which-key.nvim",
 	"tpope/vim-sleuth", -- enforces consistent tabs/spaces in file,
 	"numToStr/Comment.nvim", -- type gcc,
@@ -18,5 +20,5 @@ require("lazy").setup({
 	require("plugins.r"),
 	require("plugins.cmp"),
 	require("plugins.neotree"),
-	require("colorscheme.schemes"),
+	require("plugins.pencil"),
 })

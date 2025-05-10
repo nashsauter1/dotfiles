@@ -23,4 +23,3 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.fileencoding = "utf-8"
 vim.opt.termguicolors = true
-require("colorscheme.current")

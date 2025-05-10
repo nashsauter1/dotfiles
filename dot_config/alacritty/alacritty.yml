@@ -12,12 +12,15 @@ import:
   # - ~/.config/alacritty/dracula.yml
   # - ~/.config/alacritty/catpuccin.yml
   # - ~/.config/alacritty/nord.yml
-  - ~/.config/alacritty/onenord.yml
+  # - ~/.config/alacritty/onenord.yml
+  # - ~/.config/alacritty/everforest.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
   # - ~/.config/alacritty/monokai.yml
+  # - ~/.config/alacritty/alacritty_kanagawa.yml
+  - ~/.config/alacritty/alacritty_kanagawa_dragon.yml
 
 
 # Any items in the `env` entry below will be added as
@@ -168,7 +171,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 17
+  size: 19
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter

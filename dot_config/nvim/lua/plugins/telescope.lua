@@ -14,16 +14,16 @@ return {
 					enable_previewer = true,
 					enable_live_preview = true,
 					persist = {
-						enabled = true,
+						enabled = false,
 						path = vim.fn.stdpath("config") .. "/lua/colorscheme/current.lua",
 					},
 				},
 			},
 		})
+		require("telescope").load_extension("themes")
 		vim.keymap.set("n", "<leader>tf", builtin.find_files, { desc = "Files" })
 		vim.keymap.set("n", "<leader>tv", builtin.vim_options, { desc = "Vim Options" })
 		vim.keymap.set("n", "<leader>td", builtin.colorscheme, { desc = "Colorschemes Demo" })
 		vim.keymap.set("n", "<leader>tc", ":Telescope themes<CR>", { desc = "Colorschemes Switch" })
-		require("telescope").load_extension("themes")
 	end,
 }
